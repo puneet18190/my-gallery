@@ -1,0 +1,11 @@
+<div id="container">
+<h2>Upload Image</h2>
+
+<%= form_for @data, url: "/upload_image", html: { multipart: true } do |f| %>
+  <p>
+    <label>Select Image</label>
+    <%= f.file_field :image %>
+    <%= f.submit%>
+  </p>
+<% end %>
+</div>

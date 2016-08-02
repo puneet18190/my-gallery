@@ -1,0 +1,9 @@
+development:
+  cloud_name: "dv6rycq5a"
+  api_key: "417412291132363"
+  api_secret: "p9ji1y_xmEcxXucZhwUwwl-h5Jg"
+
+production:
+  cloud_name: "dv6rycq5a"
+  api_key: "417412291132363"
+  api_secret: "p9ji1y_xmEcxXucZhwUwwl-h5Jg"

@@ -42,9 +42,11 @@
   <div id="main" role="main">
     <ul id="tiles">
       <!-- These are our grid blocks -->
-      <% (1..19).each do |n| %>
+      <%# (1..19).each do |n| %>
+      <%@data.each do |obj|%>  
         <li>
-          <a href="#"><img src="/assets/photos/g<%=n%>.jpg" width="275"></a>
+          <!-- <a href="#"><img src="/assets/photos/g<%#=n%>.jpg" width="275"></a> -->
+          <a href="#"><img src="<%=obj.image%>" width="275"></a>
           <!-- <p>popular <span><a href="singlepage.html"><img src="/assets/view-icon.png" title="view" /><a href="singlepage.html"><img src="/assets/like.png" title="like" />
           <a href="singlepage.html"><img src="/assets/comment.png" title="link" /></a>
           <a href="singlepage.html"><img src="/assets/priview.png" title="priview" /></a>

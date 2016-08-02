@@ -1,0 +1,15 @@
+<div class="container">
+	<%= link_to 'Add Picture', new_picture_path, class: "btn btn-primary pull-right", method: :get, style: "margin: 20px;color: white" %>
+	<table class="table" style="margin-top: 20px">
+		<tr>
+			<th>Image</th>
+			<th>Action</th>
+		</tr>
+		<%@data.each do |obj|%>
+			<tr>
+				<td><img src="<%=obj.image%>" width="50" height="50"></td>
+				<td><%= link_to 'Delete', "/pictures/#{obj.id}", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+			</tr>
+		<%end%>
+	</table>
+</div>
