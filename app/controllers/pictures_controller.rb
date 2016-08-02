@@ -7,7 +7,7 @@ class PicturesController < ApplicationController
 		obj = Picture.new
 	  	obj.image = params[:picture][:image]
 	  	obj.save
-	  	redirect_to root_url
+	  	redirect_to "/pictures"
 	end
 
 	def new
