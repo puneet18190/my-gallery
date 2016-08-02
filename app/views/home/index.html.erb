@@ -4,9 +4,10 @@
 		<!---start-sidebar---->
 		<div id="w3-universal-nav">
     	<ul id="header">
-    		<div class="logo">
+    		<!-- <div class="logo">
     		<a href="/"><img src="/assets/logo.png" alt=""/></a>
-    		</div>
+    		</div> -->
+        <span style="font-size: 30px; color: red; font-weight: bold"><b><i><center>Test</center></i></b></span>
     		<!-- <div class="top-socialicons">
     			<ul>
     				<li><a class="icon1" href="#"></a></li>
@@ -41,8 +42,17 @@
   <div id="main" role="main">
     <ul id="tiles">
       <!-- These are our grid blocks -->
-      <li><a href="singlepage.html"><img src="/assets/g1.jpg" width="275"></a><p>popular <span><a href="singlepage.html"><img src="/assets/view-icon.png" title="view" /><a href="singlepage.html"><img src="/assets/like.png" title="like" /><a href="singlepage.html"><img src="/assets/comment.png" title="link" /></a><a href="singlepage.html"><img src="/assets/priview.png" title="priview" /></a></span></p></li>
-      <li><a href="singlepage.html"><img src="/assets/g2.jpg" width="275"></a><p>reproduced  <span><a href="singlepage.html"><img src="/assets/view-icon.png" title="view" /><a href="singlepage.html"><img src="/assets/like.png" title="like" /><a href="singlepage.html"><img src="/assets/comment.png" title="link" /></a><a href="singlepage.html"><img src="/assets/priview.png" title="priview" /></a></span></p></li>
+      <% (1..19).each do |n| %>
+        <li>
+          <a href="#"><img src="/assets/photos/g<%=n%>.jpg" width="275"></a>
+          <!-- <p>popular <span><a href="singlepage.html"><img src="/assets/view-icon.png" title="view" /><a href="singlepage.html"><img src="/assets/like.png" title="like" />
+          <a href="singlepage.html"><img src="/assets/comment.png" title="link" /></a>
+          <a href="singlepage.html"><img src="/assets/priview.png" title="priview" /></a>
+          </span></p> -->
+        </li>
+      <%end%>
+      
+      <!-- <li><a href="singlepage.html"><img src="/assets/g2.jpg" width="275"></a><p>reproduced  <span><a href="singlepage.html"><img src="/assets/view-icon.png" title="view" /><a href="singlepage.html"><img src="/assets/like.png" title="like" /><a href="singlepage.html"><img src="/assets/comment.png" title="link" /></a><a href="singlepage.html"><img src="/assets/priview.png" title="priview" /></a></span></p></li>
       <li><a href="singlepage.html"><img src="/assets/g3.jpg" width="275"></a><p>typesetting  <span><a href="singlepage.html"><img src="/assets/view-icon.png" title="view" /><a href="singlepage.html"><img src="/assets/like.png" title="like" /><a href="singlepage.html"><img src="/assets/comment.png" title="link" /></a><a href="singlepage.html"><img src="/assets/priview.png" title="priview" /></a></span></p></li>
       <li><a href="singlepage.html"><img src="/assets/g5.jpg" width="275"></a><p>standard  <span><a href="singlepage.html"><img src="/assets/view-icon.png" title="view" /><a href="singlepage.html"><img src="/assets/like.png" title="like" /><a href="singlepage.html"><img src="/assets/comment.png" title="link" /></a><a href="singlepage.html"><img src="/assets/priview.png" title="priview" /></a></span></p></li>
       <li><a href="singlepage.html"><img src="/assets/g6.jpg" width="275"></a><p>passages <span><a href="singlepage.html"><img src="/assets/view-icon.png" title="view" /><a href="singlepage.html"><img src="/assets/like.png" title="like" /><a href="singlepage.html"><img src="/assets/comment.png" title="link" /></a><a href="singlepage.html"><img src="/assets/priview.png" title="priview" /></a></span></p></li>
@@ -64,7 +74,7 @@
       <li><a href="singlepage.html"><img src="/assets/g10.jpg" width="275"></a><p>infancy <span><a href="singlepage.html"><img src="/assets/view-icon.png" title="view" /><a href="singlepage.html"><img src="/assets/like.png" title="like" /><a href="singlepage.html"><img src="/assets/comment.png" title="link" /></a><a href="singlepage.html"><img src="/assets/priview.png" title="priview" /></a></span></p></li>
       <li><a href="singlepage.html"><img src="/assets/g7.jpg" width="275"></a><p>words  <span><a href="singlepage.html"><img src="/assets/view-icon.png" title="view" /><a href="singlepage.html"><img src="/assets/like.png" title="like" /><a href="singlepage.html"><img src="/assets/comment.png" title="link" /></a><a href="singlepage.html"><img src="/assets/priview.png" title="priview" /></a></span></p></li>
       <li><a href="singlepage.html"><img src="/assets/g12.jpg" width="275"></a><p>accompanied  <span><a href="singlepage.html"><img src="/assets/view-icon.png" title="view" /><a href="singlepage.html"><img src="/assets/like.png" title="like" /><a href="singlepage.html"><img src="/assets/comment.png" title="link" /></a><a href="singlepage.html"><img src="/assets/priview.png" title="priview" /></a></span></p></li>
-      <li><a href="singlepage.html"><img src="/assets/g11.jpg" width="275"></a><p>reproduced  <span><a href="singlepage.html"><img src="/assets/view-icon.png" title="view" /><a href="singlepage.html"><img src="/assets/like.png" title="like" /><a href="singlepage.html"><img src="/assets/comment.png" title="link" /></a><a href="singlepage.html"><img src="/assets/priview.png" title="priview" /></a></span></p></li>
+      <li><a href="singlepage.html"><img src="/assets/g11.jpg" width="275"></a><p>reproduced  <span><a href="singlepage.html"><img src="/assets/view-icon.png" title="view" /><a href="singlepage.html"><img src="/assets/like.png" title="like" /><a href="singlepage.html"><img src="/assets/comment.png" title="link" /></a><a href="singlepage.html"><img src="/assets/priview.png" title="priview" /></a></span></p></li> -->
       
       <!-- End of grid blocks -->
     </ul>
@@ -123,7 +133,7 @@
         };
 
         // Capture scroll event.
-        $(window).bind('scroll', onScroll);
+        //$(window).bind('scroll', onScroll);
 
         // Call the layout function.
         handler = $('#tiles li');
