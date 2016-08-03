@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-  	@data = Picture.all
+  	@data = Picture.all.sort_by(&:created_at)
   end
 
   def upload
